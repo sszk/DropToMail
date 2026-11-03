@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000001 /* DropToMailApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000001 /* DropToMailApp.swift */; };
+		100000000000000000000002 /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000002 /* MainWindowView.swift */; };
+		100000000000000000000003 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000003 /* SettingsView.swift */; };
+		100000000000000000000004 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000004 /* AppSettings.swift */; };
+		100000000000000000000005 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000005 /* KeychainService.swift */; };
+		100000000000000000000006 /* SendJobManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000006 /* SendJobManager.swift */; };
+		100000000000000000000007 /* ZipService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000007 /* ZipService.swift */; };
+		100000000000000000000008 /* AppSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000008 /* AppSettingsTests.swift */; };
+		100000000000000000000009 /* SendJobManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000009 /* SendJobManagerTests.swift */; };
+		10000000000000000000000A /* ZipServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000A /* ZipServiceTests.swift */; };
+		10000000000000000000000B /* DropToMailCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000C /* DropToMailCore.framework */; };
+		10000000000000000000000D /* libzip.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000E /* libzip.dylib */; };
+		10000000000000000000000F /* libzip.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000E /* libzip.dylib */; };
+		100000000000000000000010 /* DropToMailCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000C /* DropToMailCore.framework */; };
+		100000000000000000000011 /* DropToMailCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000C /* DropToMailCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		100000000000000000000020 /* GoogleOAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000020 /* GoogleOAuth.swift */; };
+		100000000000000000000021 /* GoogleAuthorizationBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000021 /* GoogleAuthorizationBrowser.swift */; };
+		100000000000000000000022 /* GoogleAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000022 /* GoogleAuthService.swift */; };
+		100000000000000000000023 /* GoogleAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000023 /* GoogleAuthTests.swift */; };
+		100000000000000000000024 /* MIMEMessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000024 /* MIMEMessageBuilder.swift */; };
+		100000000000000000000025 /* GmailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000025 /* GmailService.swift */; };
+		100000000000000000000026 /* GmailServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000026 /* GmailServiceTests.swift */; };
+		100000000000000000000027 /* MIMEMessageBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000027 /* MIMEMessageBuilderTests.swift */; };
+		FF5FBFC6309963DB00487E84 /* DropToMail.icon in Resources */ = {isa = PBXBuildFile; fileRef = FF5FBFC330995E4D00487E84 /* DropToMail.icon */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		300000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 700000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500000000000000000000002;
+			remoteInfo = DropToMailCore;
+		};
+		300000000000000000000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 700000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500000000000000000000001;
+			remoteInfo = DropToMail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		400000000000000000000001 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				100000000000000000000011 /* DropToMailCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		200000000000000000000001 /* DropToMailApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropToMailApp.swift; sourceTree = "<group>"; };
+		200000000000000000000002 /* MainWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowView.swift; sourceTree = "<group>"; };
+		200000000000000000000003 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		200000000000000000000004 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		200000000000000000000005 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		200000000000000000000006 /* SendJobManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendJobManager.swift; sourceTree = "<group>"; };
+		200000000000000000000007 /* ZipService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipService.swift; sourceTree = "<group>"; };
+		200000000000000000000008 /* AppSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsTests.swift; sourceTree = "<group>"; };
+		200000000000000000000009 /* SendJobManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendJobManagerTests.swift; sourceTree = "<group>"; };
+		20000000000000000000000A /* ZipServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipServiceTests.swift; sourceTree = "<group>"; };
+		20000000000000000000000B /* DropToMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropToMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000000C /* DropToMailCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DropToMailCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000000D /* DropToMailCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropToMailCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000000E /* libzip.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; name = libzip.dylib; path = "$(LIBZIP_PREFIX)/lib/libzip.dylib"; sourceTree = "<absolute>"; };
+		20000000000000000000000F /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		200000000000000000000010 /* shim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shim.h; sourceTree = "<group>"; };
+		200000000000000000000020 /* GoogleOAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleOAuth.swift; sourceTree = "<group>"; };
+		200000000000000000000021 /* GoogleAuthorizationBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthorizationBrowser.swift; sourceTree = "<group>"; };
+		200000000000000000000022 /* GoogleAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthService.swift; sourceTree = "<group>"; };
+		200000000000000000000023 /* GoogleAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthTests.swift; sourceTree = "<group>"; };
+		200000000000000000000024 /* MIMEMessageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIMEMessageBuilder.swift; sourceTree = "<group>"; };
+		200000000000000000000025 /* GmailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmailService.swift; sourceTree = "<group>"; };
+		200000000000000000000026 /* GmailServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmailServiceTests.swift; sourceTree = "<group>"; };
+		200000000000000000000027 /* MIMEMessageBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIMEMessageBuilderTests.swift; sourceTree = "<group>"; };
+		FF5FBFC330995E4D00487E84 /* DropToMail.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = DropToMail.icon; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		600000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10000000000000000000000B /* DropToMailCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		600000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10000000000000000000000D /* libzip.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		600000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000010 /* DropToMailCore.framework in Frameworks */,
+				10000000000000000000000F /* libzip.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		800000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				800000000000000000000002 /* Sources */,
+				800000000000000000000003 /* Tests/DropToMailCoreTests */,
+				20000000000000000000000E /* libzip.dylib */,
+				FF5FBFC330995E4D00487E84 /* DropToMail.icon */,
+				800000000000000000000005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		800000000000000000000002 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				800000000000000000000006 /* DropToMail */,
+				800000000000000000000007 /* DropToMailCore */,
+				800000000000000000000008 /* CLibzip */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		800000000000000000000003 /* Tests/DropToMailCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000008 /* AppSettingsTests.swift */,
+				200000000000000000000009 /* SendJobManagerTests.swift */,
+				20000000000000000000000A /* ZipServiceTests.swift */,
+				200000000000000000000027 /* MIMEMessageBuilderTests.swift */,
+				200000000000000000000026 /* GmailServiceTests.swift */,
+				200000000000000000000023 /* GoogleAuthTests.swift */,
+			);
+			path = Tests/DropToMailCoreTests;
+			sourceTree = "<group>";
+		};
+		800000000000000000000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20000000000000000000000B /* DropToMail.app */,
+				20000000000000000000000C /* DropToMailCore.framework */,
+				20000000000000000000000D /* DropToMailCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		800000000000000000000006 /* DropToMail */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000001 /* DropToMailApp.swift */,
+				200000000000000000000002 /* MainWindowView.swift */,
+				200000000000000000000003 /* SettingsView.swift */,
+			);
+			path = DropToMail;
+			sourceTree = "<group>";
+		};
+		800000000000000000000007 /* DropToMailCore */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000004 /* AppSettings.swift */,
+				200000000000000000000005 /* KeychainService.swift */,
+				200000000000000000000006 /* SendJobManager.swift */,
+				200000000000000000000007 /* ZipService.swift */,
+				200000000000000000000025 /* GmailService.swift */,
+				200000000000000000000024 /* MIMEMessageBuilder.swift */,
+				200000000000000000000022 /* GoogleAuthService.swift */,
+				200000000000000000000021 /* GoogleAuthorizationBrowser.swift */,
+				200000000000000000000020 /* GoogleOAuth.swift */,
+			);
+			path = DropToMailCore;
+			sourceTree = "<group>";
+		};
+		800000000000000000000008 /* CLibzip */ = {
+			isa = PBXGroup;
+			children = (
+				20000000000000000000000F /* module.modulemap */,
+				200000000000000000000010 /* shim.h */,
+			);
+			path = CLibzip;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		500000000000000000000001 /* DropToMail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900000000000000000000001 /* Build configuration list for PBXNativeTarget "DropToMail" */;
+			buildPhases = (
+				600000000000000000000001 /* Frameworks */,
+				A00000000000000000000001 /* Sources */,
+				400000000000000000000001 /* Embed Frameworks */,
+				FF5FBFC5309963CF00487E84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B00000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = DropToMail;
+			productName = DropToMail;
+			productReference = 20000000000000000000000B /* DropToMail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		500000000000000000000002 /* DropToMailCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900000000000000000000002 /* Build configuration list for PBXNativeTarget "DropToMailCore" */;
+			buildPhases = (
+				600000000000000000000002 /* Frameworks */,
+				A00000000000000000000002 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropToMailCore;
+			productName = DropToMailCore;
+			productReference = 20000000000000000000000C /* DropToMailCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		500000000000000000000003 /* DropToMailCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900000000000000000000003 /* Build configuration list for PBXNativeTarget "DropToMailCoreTests" */;
+			buildPhases = (
+				600000000000000000000003 /* Frameworks */,
+				A00000000000000000000003 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B00000000000000000000002 /* PBXTargetDependency */,
+			);
+			name = DropToMailCoreTests;
+			productName = DropToMailCoreTests;
+			productReference = 20000000000000000000000D /* DropToMailCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		700000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2720;
+				TargetAttributes = {
+					500000000000000000000001 = {
+						CreatedOnToolsVersion = 27.2;
+					};
+					500000000000000000000002 = {
+						CreatedOnToolsVersion = 27.2;
+					};
+					500000000000000000000003 = {
+						CreatedOnToolsVersion = 27.2;
+						TestTargetID = 500000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = 900000000000000000000004 /* Build configuration list for PBXProject "DropToMail" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 800000000000000000000001;
+			productRefGroup = 800000000000000000000005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				500000000000000000000001 /* DropToMail */,
+				500000000000000000000002 /* DropToMailCore */,
+				500000000000000000000003 /* DropToMailCoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF5FBFC5309963CF00487E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5FBFC6309963DB00487E84 /* DropToMail.icon in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000001 /* DropToMailApp.swift in Sources */,
+				100000000000000000000002 /* MainWindowView.swift in Sources */,
+				100000000000000000000003 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000004 /* AppSettings.swift in Sources */,
+				100000000000000000000005 /* KeychainService.swift in Sources */,
+				100000000000000000000006 /* SendJobManager.swift in Sources */,
+				100000000000000000000007 /* ZipService.swift in Sources */,
+				100000000000000000000025 /* GmailService.swift in Sources */,
+				100000000000000000000024 /* MIMEMessageBuilder.swift in Sources */,
+				100000000000000000000022 /* GoogleAuthService.swift in Sources */,
+				100000000000000000000021 /* GoogleAuthorizationBrowser.swift in Sources */,
+				100000000000000000000020 /* GoogleOAuth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000008 /* AppSettingsTests.swift in Sources */,
+				100000000000000000000009 /* SendJobManagerTests.swift in Sources */,
+				10000000000000000000000A /* ZipServiceTests.swift in Sources */,
+				100000000000000000000027 /* MIMEMessageBuilderTests.swift in Sources */,
+				100000000000000000000026 /* GmailServiceTests.swift in Sources */,
+				100000000000000000000023 /* GoogleAuthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B00000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 500000000000000000000002 /* DropToMailCore */;
+			targetProxy = 300000000000000000000001 /* PBXContainerItemProxy */;
+		};
+		B00000000000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 500000000000000000000001 /* DropToMail */;
+			targetProxy = 300000000000000000000002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C00000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				HEADER_SEARCH_PATHS = "$(LIBZIP_PREFIX)/include";
+				LIBZIP_PREFIX = /opt/homebrew/opt/libzip;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/CLibzip";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C00000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				HEADER_SEARCH_PATHS = "$(LIBZIP_PREFIX)/include";
+				LIBZIP_PREFIX = /opt/homebrew/opt/libzip;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/CLibzip";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C00000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = DropToMail;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DropToMail;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSMinimumSystemVersion = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"$(LIBZIP_PREFIX)/lib",
+				);
+				LIBRARY_SEARCH_PATHS = "$(LIBZIP_PREFIX)/lib";
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DropToMail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/CLibzip";
+			};
+			name = Debug;
+		};
+		C00000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = DropToMail;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DropToMail;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSMinimumSystemVersion = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"$(LIBZIP_PREFIX)/lib",
+				);
+				LIBRARY_SEARCH_PATHS = "$(LIBZIP_PREFIX)/lib";
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DropToMail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/CLibzip";
+			};
+			name = Release;
+		};
+		C00000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(LIBZIP_PREFIX)/include";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/Frameworks",
+					"$(LIBZIP_PREFIX)/lib",
+				);
+				LIBRARY_SEARCH_PATHS = "$(LIBZIP_PREFIX)/lib";
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DropToMail.core;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/CLibzip";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C00000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(LIBZIP_PREFIX)/include";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/Frameworks",
+					"$(LIBZIP_PREFIX)/lib",
+				);
+				LIBRARY_SEARCH_PATHS = "$(LIBZIP_PREFIX)/lib";
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DropToMail.core;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/CLibzip";
+			};
+			name = Release;
+		};
+		C00000000000000000000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"$(LIBZIP_PREFIX)/lib",
+				);
+				LIBRARY_SEARCH_PATHS = "$(LIBZIP_PREFIX)/lib";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DropToMail.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/CLibzip";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DropToMail.app/Contents/MacOS/DropToMail";
+			};
+			name = Debug;
+		};
+		C00000000000000000000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"$(LIBZIP_PREFIX)/lib",
+				);
+				LIBRARY_SEARCH_PATHS = "$(LIBZIP_PREFIX)/lib";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DropToMail.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/CLibzip";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DropToMail.app/Contents/MacOS/DropToMail";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		900000000000000000000001 /* Build configuration list for PBXNativeTarget "DropToMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000003 /* Debug */,
+				C00000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		900000000000000000000002 /* Build configuration list for PBXNativeTarget "DropToMailCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000005 /* Debug */,
+				C00000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		900000000000000000000003 /* Build configuration list for PBXNativeTarget "DropToMailCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000007 /* Debug */,
+				C00000000000000000000008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		900000000000000000000004 /* Build configuration list for PBXProject "DropToMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000001 /* Debug */,
+				C00000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 700000000000000000000001 /* Project object */;
+}

@@ -1,0 +1,5 @@
+module CLibzip [system] {
+    header "shim.h"
+    link "zip"
+    export *
+}

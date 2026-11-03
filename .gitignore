@@ -1,0 +1,11 @@
+.build/
+.swiftpm/
+.DS_Store
+
+# Keep Xcode's per-user settings and window state local.
+xcuserdata/
+*.xcuserstate
+
+# Keep downloaded OAuth client configuration outside the repository.
+google-oauth.json
+client_secret_*.json
